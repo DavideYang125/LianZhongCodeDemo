@@ -14,7 +14,7 @@ namespace LianzhongDemo
         }
         public static string LianZhongCode()
         {
-            var url = "https://newopen.imdada.cn/common/kaptcha.json";
+            var url = "";
             var img64 = NetHandle.GetImageAsBase64Url(url).Result;
             RequestModel rm = new RequestModel();
             rm.captchaData = img64;
